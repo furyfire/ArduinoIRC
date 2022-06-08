@@ -1,4 +1,5 @@
-#include "EMailSender.h"
+#include "EMailSenderKey.h"
+#include <EMailSender.h>
 #include <DallasTemperature.h>
 #include <Ethernet.h>
 #include <OneWire.h>

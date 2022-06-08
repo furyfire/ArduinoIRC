@@ -1,0 +1,10 @@
+profiles:
+  uno:
+    fqbn: arduino:avr:uno
+    platforms:
+      - platform: arduino:avr (1.8.5)
+    libraries:
+      - EMailSender (3.0.1)
+      - Ethernet (2.0.0)
+      - DallasTemperature (3.9.0)
+      - OneWire (2.3.7)
