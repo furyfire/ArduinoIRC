@@ -1,0 +1,8 @@
+profiles:
+  uno:
+    fqbn: arduino:avr:uno
+    platforms:
+      - platform: arduino:avr (1.8.5)
+    libraries:
+      - TOTP library (1.1.0)
+      - swRTC (1.2.8)
