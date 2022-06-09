@@ -1,5 +1,5 @@
-#include "EMailSenderKey.h"
 #include <EMailSender.h>
+//Edit EMailSenderKey to disallow 
 #include <DallasTemperature.h>
 #include <Ethernet.h>
 #include <OneWire.h>
