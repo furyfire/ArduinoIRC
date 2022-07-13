@@ -25,8 +25,8 @@ void setup() {
   
   // Adjust the following values to match the current date and time
   // and power on Arduino at the time set (use GMT timezone!)
-  rtc.setDate(27, 8, 2013);
-  rtc.setTime(21, 25, 00);
+  rtc.setDate(13, 7, 2022);
+  rtc.setTime(8, 50, 00);
   
   rtc.startRTC();
 }
@@ -37,6 +37,10 @@ void loop() {
   char* newCode = totp.getCode(GMT);
   if(strcmp(code, newCode) != 0) {
     strcpy(code, newCode);
+    Serial.print("New code: ");
     Serial.println(code);
+    digitalWrite(1, HIGH);
+    delay(1000);
+    digitalWrite(1, LOW);
   }  
 }
