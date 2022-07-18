@@ -1,0 +1,8 @@
+
+../arduino-cli -v compile -m uno -e  --build-path test
+
+
+Remove the part of linking that garbage collections unused sections...
+
+-Wl,--gc-sections
+
